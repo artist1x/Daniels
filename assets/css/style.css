@@ -1,0 +1,740 @@
+
+:root{
+    --a-color:#fff;
+}
+/* --------Shared---------- */
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    color: #343434;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+.clr{
+    clear: both;
+}
+.bg-gray{
+    background: #f7f7f7;
+}
+span {
+    display: inline-block;
+}
+a, a:hover, a:focus {
+    color: inherit;
+}
+h1, h2, h3, h4, h5, h6, .logo {
+    font-family: "Montserrat", sans-serif;
+}
+.p-3rem{
+    padding: 3rem !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #1e1e1e;
+    margin: 0;
+}
+ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+li{
+    list-style: none;
+}
+.title-a{
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.line-mf {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+a{
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+}
+.section-padding{
+    padding: 100px 0;
+}
+.pb-70{
+    padding-bottom: 70px !important;
+}
+.mb-30{
+    margin-bottom: 30px !important;
+}
+.mb-50{
+    margin-bottom: 50px !important;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+p {
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+.section-head{
+    margin-bottom: 80px;
+    text-align: center;
+}
+.section-head h3 {
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+    color: inherit;
+}
+.section-head h3::after{
+    content: "";
+    width: 100%;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 30px;
+    z-index: -1;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+/* --------End Shared--------- */
+/* |-------------Navbar Section-----------| */
+.navbar{
+    background-color: transparent;
+    color: var(--a-color);
+    transition: all 0.5s;
+}
+.nav{
+    transition: all 0.5s;
+}
+.nav-link,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show{
+    position: relative;
+    color: var(--a-color);
+}
+.nav-link:focus, .nav-link:hover{
+    color: var(--a-color);
+}
+.nav-link.active::after{
+    content: "";
+    position: absolute;
+    background-color: var(--a-color);
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+}
+.container .navbar-nav > li {
+    font-size: 14px;
+    margin: 25px 20px 0;
+    background: none;
+    cursor: pointer;
+    position: relative;
+}
+.container .navbar-nav > li > a{
+    padding: 0 ;
+    color: var(--a-color);
+    font-weight: 400;
+}
+.logo {
+    float: left;
+    padding-top: 23px;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--a-color);
+}
+.logo:hover{
+    color: var(--a-color);
+}
+/* |-------------Navbar Section Ended-----------| */
+/* |-------------Hero Section-------------| */
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),url(../imgs/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header .caption h5{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.hero-cap {
+    font-size: 3.7rem;
+    line-height: 1.2;
+}
+header .caption .clip span{
+    padding: 0.2em 0;
+    font-weight: 200;
+    color: var(--a-color);
+}
+header .caption .clip .typed{
+    font-weight: 400;
+}
+.hero-cap .typed::after{
+    content: " |";
+    animation: typing 10s infinite ;
+}
+/* ------------------------------------------------animation started------------------------------------------------ */
+
+/* Designer Developer Larry Daniels*/
+@keyframes typing{
+    1%{content: " |";}
+    2%{content: " L|";}
+    3%{content: " La|";}
+    4%{content: " Lar|";}
+    5%{content: " Larr|";}
+    6%{content: " Larry|";}
+    7%{content: " Larry |";}
+    8%{content: " Larry D|";}
+    9%{content: " Larry Da|";}
+    10%{content: " Larry Dan|";}
+    11%{content: " Larry Dani|";}
+    12%{content: " Larry Danie|";}
+    13%{content: " Larry Daniel|";}
+    14%{content: " Larry Daniels|";}
+    15%{content: " Larry Daniels |";}
+    25%{content: " Larry Daniels |";}
+    26%{content: " Larry Daniels|";}
+    27%{content: " Larry Daniel|";}
+    28%{content: " Larry Danie|";}
+    29%{content: " Larry Dani|";}
+    30%{content: " Larry Dan|";}
+    31%{content: " Larry Da|";}
+    32%{content: " Larry D|";}
+    33%{content: " Larry |";}
+    34%{content: " Larry|";}
+    35%{content: " Larr|";}
+    36%{content: " Lar|";}
+    37%{content: " La|";}
+    38%{content: " L|";}
+    39%{content: " |";}
+    40%{content: " D|";}
+    41%{content: " De|";}
+    42%{content: " Des|";}
+    43%{content: " Desi|";}
+    44%{content: " Desig|";}
+    45%{content: " Design|";}
+    46%{content: " Designe|";}
+    47%{content: " Designer|";}
+    48%{content: " Designer |";}
+    49%{content: " Designer |";}
+    50%{content: " Designer |";}
+    51%{content: " Designer |";}
+    58%{content: " Designer |";}
+    59%{content: " Designer|";}
+    60%{content: " Designer|";}
+    61%{content: " Designe|";}
+    62%{content: " Design|";}
+    63%{content: " Desig|";}
+    64%{content: " Desi|";}
+    65%{content: " Des|";}
+    66%{content: " De|";}
+    67%{content: " D|";}
+    68%{content: " |";}
+    69%{content: " |";}
+    70%{content: " |";}
+    71%{content: " |";}
+    72%{content: " De|";}
+    73%{content: " Dev|";}
+    74%{content: " Deve|";}
+    75%{content: " Devel|";}
+    76%{content: " Develo|";}
+    77%{content: " Develop|";}
+    78%{content: " Develope|";}
+    79%{content: " Developer|";}
+    80%{content: " Developer |";}
+    88%{content: " Developer |";}
+    89%{content: " Developer|";}
+    90%{content: " Developer|";}
+    91%{content: " Develope|";}
+    92%{content: " Develop|";}
+    93%{content: " Develo|";}
+    94%{content: " Devel|";}
+    95%{content: " Deve|";}
+    96%{content: " Dev|";}
+    97%{content: " De|";}
+    98%{content: " D|";}
+    99%{content: " |";}
+    100%{content: " |";}
+
+
+}
+/* ------------------------------------------------animation ended------------------------------------------------ */
+header .caption .social-icon span {
+    display: inline-block;
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.social-icon{
+    margin-top: 30px;
+}
+
+/* --------------- Hero Section Ended--------------------- */
+/* -------------------About Section----------------------- */
+.about .about-img{
+    padding: 0 0 0 30px;
+    position: relative;
+}
+.about .about-img:after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.about .about-box h3 {
+    font-weight: 800;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+.about .about-box .sub-title {
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.about .skills {
+    margin-top: 30px;
+}
+.about .skills .item {
+    margin-bottom: 30px;
+}
+.about .skills .item .skills-progress{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background:#f7f7f7;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;;
+    position: relative;
+}
+.about .skills h6 {
+    font-size: 13px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.about .skills .skills-progress span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    transition: all 1s;
+}
+.about .skills .skills-progress span:after {
+    content: attr(data-value);
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 11px;
+    color: #fff;
+}
+.buton {
+    padding: 10px 30px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all 0.5s;
+}
+.buton-bg {
+    background: #1c1c1c;
+    color: #eee;
+}
+.about .buton {
+    margin-top: 20px;
+}
+.buton:hover{
+    background: #1c1c1c;
+    color: #eee;
+}
+.buton-bg:hover{
+    color:#000;
+    background-color: #fff;
+}
+/* -----------------About Section Ended-------------- */
+/* ---------------------Services Section----------------------- */
+.services .item {
+    padding: 50px 20px;
+    background: #fff;
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.services .item .icon {
+    font-size: 26px;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.services .item:hover .icon{
+    background-color: #1c1c1c;
+    color: #eee;
+}
+.services .item h6 {
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+}
+.services .item p {
+    word-spacing: 2px;
+    font-size: 14px;
+}
+/* ---------------------Services Section Ended----------------------- */
+/* ---------------------Portfolio Section------------------------ */
+.portfolio .container ul li .nav-link{
+    background-color: #fff;
+    color: #222;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    font-family: "Poppins", sans-serif;
+}
+.portfolio .container ul li .active span{
+    position: relative;
+}
+.portfolio .container ul li .nav-link span::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #111;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: all 0.4s;
+    z-index: -1;
+}
+.portfolio .container ul li .active span::after{
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 2x;
+    left: 0;
+    bottom: -5;
+    background-color: #1c1c1c;
+}
+.item-img{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio .item-img-overlay {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 2;
+    transform: translateY(10px);
+}
+.v-middle {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+}
+.portfolio .item-img h6 {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    transform: translateY(-15px);
+    transition: all 0.5s;
+}
+.portfolio .item-img .icon .icon-edit {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background-color: #111;
+    color: #eee;
+}
+.portfolio .item-img:hover .item-img-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+.portfolio .item-img .icon i:hover {
+    background: transparent;
+    color: #000;
+}
+/* ---------------------Portfolio Section Ended------------------------ */
+/* ----------------------Testmonia Section---------------------- */
+.testmonial-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+}
+.carousel-indicators {
+    margin-bottom: -3rem;
+}
+.carousel-indicators [data-bs-target].active,
+.carousel-indicators [data-bs-target]:hover{
+    background-color: #869791;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    display: block;
+    transition: opacity 0.2s ease;
+    border-radius: 50%;
+    background-color: #d6d6d6;
+}
+.carousel-item{
+    transition: all 0.2s ease;
+}
+.testmonial-box .content-test p{
+    word-spacing: 1px;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+.auther h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 5px;
+}
+.auther span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+/* ----------------------Testmonia Section Ended---------------------- */
+/* --------------------Counter Section-------------------------- */
+.counter-ico .icon-cer {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.counter-num .purecounter{
+    font-weight: 900;
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: #343434;
+    font-family: "Montserrat", sans-serif;
+}
+.counter-num .counter-text{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+/* --------------------Counter Section Ended-------------------------- */
+/* ---------------------Our Team Section----------------------- */
+.single-team {
+    background-color: rgba(52, 52, 52,.8);
+    margin-bottom: 10px;
+}
+.img-rounded{
+    border-radius: 6px;
+}
+.team-area{
+    padding: 5% 0;
+}
+.img-area {
+    overflow: hidden;
+    position: relative;
+}
+.img-area img {
+    transition: all 0.4s ease 0s;
+}
+.img-area:hover img {
+    transform: scale(1.2);
+}
+.img-area .social {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    text-align: center;
+    inset: 5px;
+    opacity: 0;
+    transition: 0.5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+}
+.single-team:hover .social {
+    cursor: pointer;
+    opacity: 1;
+    transform: rotateY(0deg) scale(1, 1);
+}
+.img-area .social ul {
+    text-align: center;
+    position: relative;
+    top: 175px;
+}
+.list-inline > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.img-area .social ul li a {
+    border: 1px solid #000;
+    color: #fff;
+    background-color: #000;
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+.img-area .social ul li a:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+.img-text {
+    padding: 25px;
+    color: #fff;
+    text-align: center;
+}
+.img-text h4 {
+    margin: 0 0 5px;
+    color: #fff;
+}
+.img-text h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+/* ---------------------Our Team Section Ended----------------------- */
+/* ---------------------Contact Section----------------------- */
+.contact .info .item {
+    margin-bottom: 30px;
+}
+.contact .info .item .icon {
+    font-size: 25px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.contact .info .item h6 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.contact .info .item:hover .icon {
+    background: #1c1c1c;
+    color: #eee;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.contact .form input[type="text"], 
+.contact .form input[type="email"], 
+.contact .form textarea {
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+    outline: 0;
+}
+.contact .form textarea {
+    height: 160px;
+    max-height: 160px;
+    max-width: 100%;
+}
+.contact .form input[type="submit"]{
+    float: left;
+}
+/* --------------Footer Section--------------------- */
+footer {
+    background: #1c1c1c;
+    padding: 30px;
+}
+footer p {
+    font-size: 13px;
+    word-spacing: 2px;
+}
+/* --------------Footer Section--------------------- */
+/* --------------Media Query for container */
+
+@media screen and (min-width: 1200px) {
+    .container{
+        width: 1170px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .testmonial .container{
+        width: 945px;
+    }
+}
+@media screen and (max-width: 768px){
+    header .caption h5{
+        font-size: 50px;
+
+    }
+    .hero-cap {
+        font-size: 2rem;
+
+    }
+    .navbar-nav{
+        background-color: white;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .nav-link,
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show{
+        color: #000 !important;
+    }
+    .container .navbar-nav > li > a{
+        color: #000 !important;
+        
+    }
+} 
+/* Navbar-Scrolled */
+.scrolled{
+    background-color: rgba(255, 255, 255, 0.829);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15) ;
+}
