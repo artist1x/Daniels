@@ -126,7 +126,7 @@ p {
 .nav-link:focus, .nav-link:hover{
     color: var(--a-color);
 }
-.nav-link.active::after{
+nav .nav-link.active::after{
     content: "";
     position: absolute;
     background-color: var(--a-color);
@@ -439,9 +439,9 @@ header .caption .social-icon span {
     content: "";
     position: absolute;
     width: 95%;
-    height: 2x;
+    height: 2px;
     left: 0;
-    bottom: -5;
+    bottom: -5px;
     background-color: #1c1c1c;
 }
 .item-img{
